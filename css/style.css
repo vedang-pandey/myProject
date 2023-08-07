@@ -1,0 +1,423 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+:root {
+    --color1: maroon;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.fHeader {
+    background-color: rgba(184, 178, 178, 0.473);
+}
+
+header.fHeader.active {
+    background: var(--color1) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.fHeader.active #navbarNav .navbar-nav li a {
+    color: #fff;
+}
+
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nav-item a {
+    color: var(--color1);
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: right;
+}
+
+/* banner css start here */
+
+.banner-main {
+    position: relative;
+    font-weight: 700;
+}
+
+.banner-main>img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+
+}
+
+.banner-txt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.banner-main-text {
+    width: 100%;
+    text-align: center;
+}
+
+.main-heading {
+    color: var(--color1) !important;
+    font-weight: 750;
+}
+
+.banner-main-text>h1 {
+
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 1px
+}
+
+.banner-main-text>p {
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+/* start about section here */
+
+.about-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.more-btn {
+    background-color: var(--color1);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* special course css start here  */
+
+.advance-features {
+    background-color: var(--color1);
+    color: #fff;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+
+.advance-features>i {
+    font-size: 45px;
+}
+
+.advance-features:hover {
+    transform: translateY(-10px);
+    transition: all .2s;
+}
+
+/* our courses css start here */
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.call-btn {
+    background-color: var(--color1);
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.call-btn:hover {
+    background: black;
+    transform: scale(1.03);
+}
+
+
+.our-course-section .card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .5s ease !important;
+}
+
+.our-course-section .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.04);
+}
+
+.our-course-section .card .card-body a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+
+}
+
+
+
+/* Our team hover effect and all css start here  */
+.card-containt {
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none !important;
+
+}
+
+.card-containt>img {
+    padding: 10px;
+}
+
+.card-text {
+    position: absolute;
+    background-color: maroon;
+    opacity: .8;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 87%;
+    height: 90%;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 0 20px;
+    transform: translate(0, 5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    visibility: hidden;
+    transition: .5s all ease-in-out;
+}
+
+.card-text h4 {
+    margin-bottom: 1.1rem;
+}
+
+.card-containt:hover .card-text {
+    visibility: visible;
+    transition: .5s all ease-in-out;
+}
+
+.icons a i {
+    font-size: 18px;
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* only icons css start here */
+.icons .facebook {
+    background-color: #2b4170;
+    background: -moz-linear-gradient(top, #6488d7, #3a5389);
+    background: -webkit-linear-gradient(top, #4c6fbb, #35508d);
+
+}
+
+.icons .instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.icons .linked-in {
+    background: rgb(10, 102, 194);
+}
+
+.icons .linked-in:hover {
+    background: rgb(10, 102, 194);
+}
+
+/* end icons hover */
+
+
+
+/* contact-us css start here */
+
+
+.container-contact-us {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.contact-form {
+    padding: 55px 25px 25px 10px;
+}
+
+.contactus-section {
+    margin-bottom: 40px;
+}
+
+.container-contact-us {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.single-contacts-boxs {
+    background: var(--color1);
+    color: white;
+    padding: 55px 0px 48px 39px;
+    border-radius: 5px;
+    opacity: .90;
+    margin: 40px 25px 25px 25px;
+}
+
+.contacts-icon ul li i {
+    display: inline;
+    margin: 0px 25px 15px 0;
+    font-size: 35px;
+    color: #fff;
+    position: relative;
+    float: left;
+}
+
+.contacts-icon ul li {
+    display: inline;
+    list-style: none;
+}
+
+.contacts-tex {
+    margin: 50px;
+}
+
+.contacts-tex h2 {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contacts-tex p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.contact-form-container .form_box input {
+    width: 100%;
+    height: 50px;
+    background: #F0F0F4;
+    border-radius: 3px;
+    border: 1px solid maroon;
+    outline: 0;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.contact-form-container .form_box textarea {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 15px;
+    border: 1px solid maroon;
+    height: 150px;
+    outline: 0;
+    background: #F0F0F4;
+    margin-top: 7px;
+}
+
+.form-button button {
+    display: inline-block;
+    border: none;
+    background: maroon;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+/* start footere herer */
+footer {
+    background-color: #080808;
+    color: white;
+    padding: 60px 15px 60px 15px;
+    margin-top: 40px;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.icons-footer {}
+
+/* Scroll buttonn css */
+#upBtn {
+    display: block;
+    position: fixed;
+    background-color: maroon;
+    color: white;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 500px;
+}
+
+#upBtn:hover {
+    background-color: black;
+}
+
+/* Start css mediaqurry for text responsive */
+
+
+@media (max-width: 1920px) {
+    p{font-size:18px;}
+}
+@media (max-width: 1680px) {
+    p{font-size: 18px;}
+}
+@media (max-width: 1440px) {
+    p{font-size: 18px;}
+}
+@media (max-width: 1200px) {
+    p{font-size: 16px;}
+}
+@media (max-width: 1023.9px) {
+    p{font-size: 16px;}
+}
+@media (max-width: 991.9px) {
+    p{font-size: 14px;}
+}
+@media (max-width: 768px) {
+    p{font-size:14px}
+}
+@media (max-width: 575px) {
+    p{font-size:14px;}
+}
+@media (max-width: 480px) {
+    p{font-size:12px;}
+}
+
+/* h1 tag  */
+
