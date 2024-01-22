@@ -1,2 +1,2 @@
 # myProject
-This is my first web site .
+This is coaching website.
